@@ -39,16 +39,15 @@
     <url>https://github.com/OpenBankingToolkit/eidas-psd2-sdk/</url>
 
     <properties>
-        <bouncycastle.version>1.62</bouncycastle.version>
-        <bcpkix.jdk15on.version>1.68</bcpkix.jdk15on.version>
-        <jaxb.javax.version>2.2</jaxb.javax.version>
+        <bouncycastle.version>1.76</bouncycastle.version>
+        <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
         <java.version>11</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <version.javadoc.plugin>3.0.1</version.javadoc.plugin>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.13.1</junit.version>
-        <json.smart.version>2.3</json.smart.version>
+        <json.smart.version>2.5.1</json.smart.version>
         <license-maven-plugin.version>3.0</license-maven-plugin.version>
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
     </properties>
@@ -59,18 +58,18 @@
     <dependencies>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15on</artifactId>
+            <artifactId>bcprov-jdk18on</artifactId>
             <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcpkix-jdk15on</artifactId>
-            <version>${bcpkix.jdk15on.version}</version>
+            <artifactId>bcpkix-jdk18on</artifactId>
+            <version>${bouncycastle.version}</version>
         </dependency>
         <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>${jaxb.javax.version}</version>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jakarta.xml.bind-api.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/net.minidev/json-smart -->
         <dependency>
